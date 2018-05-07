@@ -1,0 +1,39 @@
+.radioInput[type="radio"] {
+  position: relative;
+  margin-top: 11px;
+} 
+
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width:100%;
+  box-sizing: inherit;
+  margin-top: 0;
+  padding-left: 30px;}
+
+
+.inputContainer {
+  width: auto;
+}
+
+
+label,
+label:before,
+label:hover{
+  transition: 0.25s all ease;
+}
+.inputContainerItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 36px;
+  box-sizing: border-box;
+}

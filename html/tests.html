@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="../scripts/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/inputStyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../images/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/menu.css">
+  <title>PyBrain</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <div class="mainDiv">
+    <nav class="saitMenu">
+      <ul>
+        <a href="../index.html"><img src="../images/intro_python.jpg" class="img"></a>
+        <li><a href="../index.html" class="text">Главная</a></li>
+        <li><a href="#" class="text">Курс</a></li>
+        <li><a href="#" class="text">Задания</a></li>
+        <li class="active"><a class="text">Тесты</a></li>
+        <li><a href="#" class="text">Справочник</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header">
+        <div class="text01">Тесты
+        </div>
+      </div>
+    </header>
+    <div id='content' class="content">
+      <div id="testDiv" style='display:none;' class="testDiv"><br />
+        <form id="form" action="">
+          <h2 id="question" class="question topic">
+          </h2>
+          <div style="height: 182px;" class="inputContainer">
+            <div class="inputContainerItem"><input type="radio" name="radioInput" id="q1" class="radioInput" value="1"><label for="q1" id="ans1"></label></div>
+            <div class="inputContainerItem"><input type="radio" name="radioInput" class="radioInput" id="q2" value="2"><label id="ans2" for="q2"></label><br /></div>
+            <div class="inputContainerItem"><input type="radio" name="radioInput" class="radioInput" id="q3" value="3"><label id="ans3" for="q3"></label><br /></div>
+            <div class="inputContainerItem"><input type="radio" name="radioInput" class="radioInput" id="q4" value="4"><label id="ans4" for="q4"></label><br /></div>
+          </div>
+          <span class="resultButton unactive" id="submit">Ответить</span>
+        </form>
+        <div id="containerForShowingCirle" class="containerForShowingCirle">
+        </div>
+      </div>
+      <div id="choiceTest" style="display:block;" class="choiceDiv">
+        <h2 style="margin-bottom: 5px;" class="topic">Вот каталог тестов</h2><br>
+        <div style="font-weight: 200;font-size: 10px;">(Да там только 1 тест)</div><span typeTest="beginnerTest" id="choice" class="resultButton">Тест для начинающих</span></div>
+      <div id="resultTest" class="resultDiv"><div class="miniSection" style="text-align: center;" >Спасибо за прохождение теста ваш результат: <span id="result"></span><br />Вы можете пройти этот тест снова<br />или вернуться к каталогу нажав сообветствующие кнопки<br /><span onclick="$('#resultTest').css('display','none');$('#testDiv').css('display','flex');$('#choiceTest').css('display','none');" class="resultButton">Пройти снова</span><span style="margin: 0 5px;"></span><span class="resultButton" onclick="$('#resultTest').css('display','none');$('#testDiv').css('display','none');$('#choiceTest').css('display','block');">К каталогу</span></div></div>
+      <footer>
+        <div class=footerText></div>
+      </footer>
+    </div>
+  </div>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/test.js"></script>
+</body>
+
+</html>
